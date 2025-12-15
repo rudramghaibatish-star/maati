@@ -203,7 +203,45 @@ img {
   }
 }
 @media (max-width: 768px) {
-  body {
-    background-color: #ffe4e1; /* light pink for testing */
+  /* Navigation bar cleanup */
+  nav ul {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 12px;
+    padding: 10px;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+
+  nav ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav li {
+    flex: 0 0 auto;
+    font-size: 1rem;
+    padding: 6px 12px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+
+  /* Header spacing fix */
+  h1, h2, h3 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  .section-header {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+
+  .product-section {
+    padding: 10px;
   }
 }
