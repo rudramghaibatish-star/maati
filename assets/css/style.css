@@ -202,3 +202,8 @@ img {
     border-radius: 5px;
   }
 }
+@media (max-width: 768px) {
+  body {
+    background-color: #ffe4e1; /* light pink for testing */
+  }
+}
